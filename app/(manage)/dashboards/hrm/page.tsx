@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 const page = () => {
   return (
@@ -1293,6 +1294,10 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <Script src="/assets/js/hrm-dashboard.js" strategy="lazyOnload" />
+      <Script src="/assets/js/custom-switcher.min.js" strategy="lazyOnload" />
+      <Script src="/assets/js/custom.js" strategy="lazyOnload" />
     </>
   );
 };

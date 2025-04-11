@@ -7,8 +7,6 @@ import Loader from "@/components/Loader";
 import CountryModal from "@/components/modals/CountryModal";
 import SearchModal from "@/components/modals/SearchModal";
 import OffCanvas from "@/components/OffCanvas";
-import RouteBasedHead from "./header";
-import RouteBasedScripts from "./scripts";
 
 export const metadata: Metadata = {
   title: "Cloud eBPLS",
@@ -84,7 +82,14 @@ export default function RootLayout({
           href="/assets/libs/choices.js/public/assets/styles/choices.min.css"
         />
 
-        <RouteBasedHead />
+        <link
+          rel="stylesheet"
+          href="/assets/libs/jsvectormap/css/jsvectormap.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="/assets/libs/swiper/swiper-bundle.min.css"
+        />
       </head>
       <body>
         <OffCanvas />
@@ -137,12 +142,31 @@ export default function RootLayout({
           src="/assets/libs/@simonwep/pickr/pickr.es5.min.js"
           strategy="afterInteractive"
         />
-        <RouteBasedScripts />
+
         <Script
-          src="/assets/js/custom-switcher.min.js"
+          src="/assets/libs/jsvectormap/js/jsvectormap.min.js"
           strategy="afterInteractive"
         />
-        <Script src="/assets/js/custom.js" strategy="afterInteractive" />
+
+        <Script
+          src="/assets/libs/jsvectormap/maps/world-merc.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/libs/apexcharts/apexcharts.min.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/libs/chart.js/chart.min.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/libs/moment/moment.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

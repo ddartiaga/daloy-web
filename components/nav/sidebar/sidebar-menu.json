@@ -1,0 +1,112 @@
+{
+    "categories": [
+            {
+                "id":"main",
+                "label": "MAIN",
+                
+                "subcategory": [
+                    {
+                        "id":"main-dashboard",
+                        "label": "Dashboards",
+                        "new": false,
+                        "count": 12,
+                        "icon": "bx bx-home",
+                        "items": [
+                            {
+                                "id": "main-dashboard-item-crm",
+                                "label": "CRM",
+                                "path": "/dashboards/crm",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "main-dashboard-item-sales",
+                                "label": "Sales",
+                                "path": "/dashboards/sales",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "main-dashboard-item-analytics",
+                                "label": "Analytics",
+                                "path": "/dashboards/analytics",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "main-dashboard-item-projects",
+                                "label": "Projects",
+                                "path": "/dashboards/projects",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "main-dashboard-item-hrm",
+                                "label": "HRM",
+                                "path": "/dashboards/hrm",
+                                "new": false,
+                                "subitems": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":"pages",
+                "label": "PAGES",
+                "subcategory": [
+                    {
+                        "id":"pages-pages",
+                        "label": "Pages",
+                        "new": true,
+                        "count": 0,
+                        "icon": "bx bx-file-blank",
+                        "items": [
+                            {
+                                "id": "pages-pages-about",
+                                "label": "About Us",
+                                "path": "/about-us",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "pages-pages-blog",
+                                "label": "Blog",
+                                "path": "",
+                                "new": true,
+                                "subitems": [
+                                    {
+                                        "id": "pages-pages-blog-blog",
+                                        
+                                        "label": "Blog1",
+                                        "path": "/blog",
+                                        "new": false
+                                    },
+                                    {
+                                        "id": "pages-pages-blog-details",
+                                        "label": "Blog 2",
+                                        "path": "/blog-details",
+                                        "new": true
+                                    },
+                                    {
+                                        "id": "pages-pages-blog-create",
+                                        "label": "Create 3",
+                                        "path": "/blog-details",
+                                        "new": false
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "pages-pages-chat",
+                                "label": "Chat",
+                                "path": "/chat",
+                                "new": false,
+                                "subitems": []
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+}

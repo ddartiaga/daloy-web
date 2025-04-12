@@ -8,6 +8,16 @@ import CountryModal from "@/components/modals/CountryModal";
 import SearchModal from "@/components/modals/SearchModal";
 import OffCanvas from "@/components/OffCanvas";
 
+import "@/public/assets/libs/bootstrap/css/bootstrap.min.css";
+import "@/public/assets/css/icons.css";
+import "@/public/assets/libs/node-waves/waves.min.css";
+import "@/public/assets/libs/simplebar/simplebar.min.css";
+import "@/public/assets/libs/flatpickr/flatpickr.min.css";
+import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
+import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
+import "@/public/assets/libs/jsvectormap/css/jsvectormap.min.css";
+import "@/public/assets/libs/swiper/swiper-bundle.min.css";
+
 export const metadata: Metadata = {
   title: "Cloud eBPLS",
   description: "Cloud Electronic Business Permits and Licensing System (EBPLS)",
@@ -57,39 +67,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
-
-        <link
-          href="/assets/libs/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link href="/assets/css/styles.min.css" rel="stylesheet" />
-        <link href="/assets/css/icons.css" rel="stylesheet" />
-        <link href="/assets/libs/node-waves/waves.min.css" rel="stylesheet" />
-        <link
-          href="/assets/libs/simplebar/simplebar.min.css"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/flatpickr/flatpickr.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/@simonwep/pickr/themes/nano.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/choices.js/public/assets/styles/choices.min.css"
-        />
-
-        <link
-          rel="stylesheet"
-          href="/assets/libs/jsvectormap/css/jsvectormap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/swiper/swiper-bundle.min.css"
-        />
       </head>
       <body>
         <OffCanvas />

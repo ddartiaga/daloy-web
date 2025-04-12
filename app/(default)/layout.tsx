@@ -24,6 +24,14 @@ export const metadata: Metadata = {
   ],
 };
 
+import "@/public/assets/libs/bootstrap/css/bootstrap.min.css";
+import "@/public/assets/css/icons.css";
+import "@/public/assets/libs/node-waves/waves.min.css";
+import "@/public/assets/libs/simplebar/simplebar.min.css";
+import "@/public/assets/libs/flatpickr/flatpickr.min.css";
+import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
+import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -48,33 +56,6 @@ export default function RootLayout({
           type="image/x-icon"
         />
 
-        <link
-          href="/assets/libs/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link href="/assets/css/styles.min.css" rel="stylesheet" />
-
-        <link href="/app/css/app.css" rel="stylesheet" />
-
-        <link href="/assets/css/icons.css" rel="stylesheet" />
-        <link href="/assets/libs/node-waves/waves.min.css" rel="stylesheet" />
-        {/* <link href="/assets/libs/simplebar/simplebar.min.css" rel="stylesheet" /> */}
-        <link
-          href="/assets/libs/swiper/swiper-bundle.min.css"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/flatpickr/flatpickr.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/@simonwep/pickr/themes/nano.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/choices.js/public/assets/styles/choices.min.css"
-        />
         <Script
           id="theme-script"
           strategy="beforeInteractive"

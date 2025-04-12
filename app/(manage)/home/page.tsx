@@ -9,7 +9,7 @@ const Home = () => {
           <CardSimple
             icon={
               <span className="avatar avatar-xl">
-                <img src="/assets/images/faces/8.jpg" alt="img" />
+                <Image width={28} height={28}  src="/assets/images/faces/8.jpg" alt="img" />
               </span>
             }
             heading="Dudz A"
@@ -22,7 +22,7 @@ const Home = () => {
           <CardSimple
             icon={
               <span className="avatar avatar-xl">
-                <img src="/assets/images/faces/8.jpg" alt="img" />
+                <Image width={28} height={28}  src="/assets/images/faces/8.jpg" alt="img" />
               </span>
             }
             heading="Ninz A"
@@ -35,7 +35,7 @@ const Home = () => {
           <CardSimple
             icon={
               <span className="avatar avatar-xl">
-                <img src="/assets/images/faces/8.jpg" alt="img" />
+                <Image width={28} height={28}  src="/assets/images/faces/8.jpg" alt="img" />
               </span>
             }
             heading="Spotty"
@@ -48,7 +48,7 @@ const Home = () => {
           <CardSimple
             icon={
               <span className="avatar avatar-xl">
-                <img src="/assets/images/faces/8.jpg" alt="img" />
+                <Image width={28} height={28}  src="/assets/images/faces/8.jpg" alt="img" />
               </span>
             }
             heading="Prada"

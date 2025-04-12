@@ -1,16 +1,15 @@
-"use client";
+import PseudoLink from "@/components/elements/PseudoLink";
 
 const NavBarOffCanvas = () => {
   return (
     <div className="header-element">
-      <a
-        onClick={(e) => e.preventDefault()}
+      <PseudoLink
         className="header-link switcher-icon"
         data-bs-toggle="offcanvas"
         data-bs-target="#switcher-canvas"
       >
         <i className="bx bx-cog header-link-icon" />
-      </a>
+      </PseudoLink>
     </div>
   );
 };

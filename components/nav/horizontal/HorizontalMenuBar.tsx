@@ -18,12 +18,16 @@ const HorizontalMenuBar = ({ menu }: { menu: HorizontalMenuType }) => {
             <div className="landing-logo-container">
               <div className="horizontal-logo">
                 <a href="index.html" className="header-logo">
-                  <img
+                  <Image 
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/desktop-logo.png"
                     alt="logo"
                     className="desktop-logo"
                   />
-                  <img
+                  <Image 
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/desktop-white.png"
                     alt="logo"
                     className="desktop-white"

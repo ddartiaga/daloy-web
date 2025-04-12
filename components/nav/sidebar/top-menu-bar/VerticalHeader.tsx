@@ -1,5 +1,5 @@
-"use client";
 
+import Image from "next/image";
 import NavBarSearch from "./NavBarSearch";
 import NavBarCountry from "./NavBarCountry";
 import NavBarCart from "./NavBarCart";
@@ -20,32 +20,44 @@ const VerticalHeader = () => {
             <div className="header-element">
               <div className="horizontal-logo">
                 <a href="index.html" className="header-logo">
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/desktop-logo.png"
                     alt="logo"
                     className="desktop-logo"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/toggle-logo.png"
                     alt="logo"
                     className="toggle-logo"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/desktop-dark.png"
                     alt="logo"
                     className="desktop-dark"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/toggle-dark.png"
                     alt="logo"
                     className="toggle-dark"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/desktop-white.png"
                     alt="logo"
                     className="desktop-white"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/toggle-white.png"
                     alt="logo"
                     className="toggle-white"

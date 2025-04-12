@@ -1,10 +1,10 @@
-"use client";
+import PseudoLink from "@/components/elements/PseudoLink";
+import Image from "next/image";
 
 const NavBarCart = () => {
   return (
     <div className="header-element cart-dropdown">
-      <a
-        onClick={(e) => e.preventDefault()}
+      <PseudoLink
         className="header-link dropdown-toggle"
         data-bs-auto-close="outside"
         data-bs-toggle="dropdown"
@@ -16,7 +16,7 @@ const NavBarCart = () => {
         >
           5
         </span>
-      </a>
+      </PseudoLink>
       <div
         className="main-header-dropdown dropdown-menu dropdown-menu-end"
         data-popper-placement="none"
@@ -35,7 +35,9 @@ const NavBarCart = () => {
         <ul className="list-unstyled mb-0" id="header-cart-items-scroll">
           <li className="dropdown-item">
             <div className="d-flex align-items-start cart-dropdown-item">
-              <img
+              <Image
+                width={28}
+                height={28}
                 src="/assets/images/ecommerce/jpg/1.jpg"
                 alt="img"
                 className="avatar avatar-sm avatar-rounded br-5 me-3"
@@ -47,12 +49,9 @@ const NavBarCart = () => {
                   </div>
                   <div>
                     <span className="text-black mb-1">$1,299.00</span>
-                    <a
-                      onClick={(e) => e.preventDefault()}
-                      className="header-cart-remove float-end dropdown-item-close"
-                    >
+                    <PseudoLink className="header-cart-remove float-end dropdown-item-close">
                       <i className="ti ti-trash" />
-                    </a>
+                    </PseudoLink>
                   </div>
                 </div>
                 <div className="min-w-fit-content d-flex align-items-start justify-content-between">
@@ -66,7 +65,9 @@ const NavBarCart = () => {
           </li>
           <li className="dropdown-item">
             <div className="d-flex align-items-start cart-dropdown-item">
-              <img
+              <Image
+                width={28}
+                height={28}
                 src="/assets/images/ecommerce/jpg/3.jpg"
                 alt="img"
                 className="avatar avatar-sm avatar-rounded br-5 me-3"
@@ -78,12 +79,9 @@ const NavBarCart = () => {
                   </div>
                   <div>
                     <span className="text-black mb-1">$179.29</span>
-                    <a
-                      onClick={(e) => e.preventDefault()}
-                      className="header-cart-remove float-end dropdown-item-close"
-                    >
+                    <PseudoLink className="header-cart-remove float-end dropdown-item-close">
                       <i className="ti ti-trash" />
-                    </a>
+                    </PseudoLink>
                   </div>
                 </div>
                 <div className="min-w-fit-content d-flex align-items-start justify-content-between">
@@ -101,7 +99,9 @@ const NavBarCart = () => {
           </li>
           <li className="dropdown-item">
             <div className="d-flex align-items-start cart-dropdown-item">
-              <img
+              <Image
+                width={28}
+                height={28}
                 src="/assets/images/ecommerce/jpg/5.jpg"
                 alt="img"
                 className="avatar avatar-sm avatar-rounded br-5 me-3"
@@ -113,12 +113,9 @@ const NavBarCart = () => {
                   </div>
                   <div>
                     <span className="text-black mb-1">$29.00</span>
-                    <a
-                      onClick={(e) => e.preventDefault()}
-                      className="header-cart-remove float-end dropdown-item-close"
-                    >
+                    <PseudoLink className="header-cart-remove float-end dropdown-item-close">
                       <i className="ti ti-trash" />
-                    </a>
+                    </PseudoLink>
                   </div>
                 </div>
                 <div className="min-w-fit-content d-flex align-items-start justify-content-between">
@@ -131,7 +128,9 @@ const NavBarCart = () => {
           </li>
           <li className="dropdown-item">
             <div className="d-flex align-items-start cart-dropdown-item">
-              <img
+              <Image
+                width={28}
+                height={28}
                 src="/assets/images/ecommerce/jpg/4.jpg"
                 alt="img"
                 className="avatar avatar-sm avatar-rounded br-5 me-3"
@@ -143,12 +142,9 @@ const NavBarCart = () => {
                   </div>
                   <div>
                     <span className="text-black mb-1">$4,999.00</span>
-                    <a
-                      onClick={(e) => e.preventDefault()}
-                      className="header-cart-remove float-end dropdown-item-close"
-                    >
+                    <PseudoLink className="header-cart-remove float-end dropdown-item-close">
                       <i className="ti ti-trash" />
-                    </a>
+                    </PseudoLink>
                   </div>
                 </div>
                 <div className="min-w-fit-content d-flex align-items-start justify-content-between">
@@ -162,7 +158,9 @@ const NavBarCart = () => {
           </li>
           <li className="dropdown-item">
             <div className="d-flex align-items-start cart-dropdown-item">
-              <img
+              <Image
+                width={28}
+                height={28}
                 src="/assets/images/ecommerce/jpg/6.jpg"
                 alt="img"
                 className="avatar avatar-sm avatar-rounded br-5 me-3"
@@ -174,12 +172,9 @@ const NavBarCart = () => {
                   </div>
                   <div>
                     <span className="text-black mb-1">$129.00</span>
-                    <a
-                      onClick={(e) => e.preventDefault()}
-                      className="header-cart-remove float-end dropdown-item-close"
-                    >
+                    <PseudoLink className="header-cart-remove float-end dropdown-item-close">
                       <i className="ti ti-trash" />
-                    </a>
+                    </PseudoLink>
                   </div>
                 </div>
                 <div className="d-flex align-items-start justify-content-between">

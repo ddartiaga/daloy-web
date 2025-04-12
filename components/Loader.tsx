@@ -1,9 +1,15 @@
-"use client";
+import Image from "next/image";
 
 const Loader = () => {
   return (
     <div id="loader">
-      <img src="/assets/images/media/loader.svg" alt="" />
+      <Image
+        width={100}
+        height={100}
+        src="/assets/images/media/loader.svg"
+        alt="Loading..."
+        priority
+      />
     </div>
   );
 };

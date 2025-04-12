@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Landing = () => {
   return (
     <>
@@ -13,9 +15,7 @@ const Landing = () => {
                     </h6>
                   </div>
                   <p className="landing-banner-heading mb-3">
-                    Cloud Electronic Business Permit and Licensing System (Cloud
-                    eBPLS)
-                    <span className="text-secondary"></span>
+                    DALOY -<span className="text-secondary"></span>
                   </p>
                   <div className="fs-16 mb-5 text-fixed-white op-7">
                     Cloud eBPLS (Cloud Electronic Business Permit and Licensing
@@ -33,7 +33,9 @@ const Landing = () => {
               </div>
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-4">
                 <div className="text-end landing-main-image landing-heading-img">
-                  <img
+                  <Image
+                    width={420}
+                    height={420}
                     src="/assets/images/media/landing/1.png"
                     alt=""
                     className="img-fluid"
@@ -83,7 +85,9 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <img
+                    <Image
+                      width={120}
+                      height={256}
                       src="/assets/images/media/media-38.jpg"
                       className="img-fluid rounded-end h-100 w-100"
                       alt="..."
@@ -116,7 +120,9 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <img
+                    <Image
+                      width={120}
+                      height={256}
                       src="/assets/images/media/media-38.jpg"
                       className="img-fluid rounded-end h-100 w-100"
                       alt="..."
@@ -149,7 +155,9 @@ const Landing = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <img
+                    <Image
+                      width={120}
+                      height={256}
                       src="/assets/images/media/media-38.jpg"
                       className="img-fluid rounded-end h-100 w-100"
                       alt="..."
@@ -681,7 +689,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/15.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/15.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Json Taylor</p>
@@ -722,7 +735,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/4.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/14.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Melissa Blue</p>
@@ -763,7 +781,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/2.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/2.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Kiara Advain</p>
@@ -804,7 +827,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/10.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/10.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Jhonson Smith</p>
@@ -845,7 +873,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/12.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/12.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Dwayne Stort</p>
@@ -886,7 +919,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/3.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/3.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Jasmine Kova</p>
@@ -927,7 +965,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/16.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/16.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Dolph MR</p>
@@ -968,7 +1011,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/5.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/5.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Brenda Simpson</p>
@@ -1009,7 +1057,12 @@ const Landing = () => {
                   <div className="card-body">
                     <div className="d-flex align-items-center mb-3">
                       <span className="avatar avatar-md avatar-rounded me-3">
-                        <img src="/assets/images/faces/7.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/faces/7.jpg"
+                          alt=""
+                        />
                       </span>
                       <div>
                         <p className="mb-0 fw-semibold fs-14">Julia Sams</p>

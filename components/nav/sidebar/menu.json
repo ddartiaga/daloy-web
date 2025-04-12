@@ -8,7 +8,7 @@
                         "id":"main-dashboard",
                         "label": "Dashboards",
                         "new": false,
-                        "path": null,
+                        "count": 12,
                         "icon": "bx bx-chart",
                         "items": [
                             {
@@ -51,16 +51,43 @@
                 ]
             },
             {
-                "id":"reports",
+                "id":"reporting",
                 "label": "REPORTING",
                 "subcategory": [
                     {
-                        "id":"reports-report",
+                        "id":"reporting-reports",
                         "label": "Reports",
                         "new": false,
-                        "path": "/reports",
                         "count": 0,
-                        "icon": "bx bx-file",
+                        "icon": "bx bx-spreadsheet",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id":"management",
+                "label": "MANAGEMENT",
+                "subcategory": [
+                    {
+                        "id":"management-ticketing",
+                        "label": "Ticketing",
+                        "new": false,
+                        "count": 0,
+                        "icon": "bx bx-task",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "id":"management",
+                "label": "MANAGEMENT",
+                "subcategory": [
+                    {
+                        "id":"management-ticketing",
+                        "label": "Ticketing",
+                        "new": false,
+                        "count": 0,
+                        "icon": "bx bx-task",
                         "items": []
                     }
                 ]
@@ -73,62 +100,55 @@
                         "id":"maps-gis",
                         "label": "GIS",
                         "new": false,
-                        "path": "/gis/map",
-                        "count": 0,
-                        "icon": "bx bx-map-alt",
-                        "items": []
-                    }
-                ]
-            },
-            
-            {
-                "id":"management",
-                "label": "MANAGEMENT",
-                "subcategory": [
-                    {
-                        "id":"management-ticketing",
-                        "label": "Ticketing",
-                        "new": false,
-                        "path": "/ticketing",
-                        "count": 0,
-                        "icon": "bx bx-task",
-                        "items": []
-                    }
-                ]
-            },
-            {
-                "id":"costing",
-                "label": "COST & ESTIMATE",
-                "subcategory": [
-                    {
-                        "id":"costing-queue",
-                        "label": "Queue",
-                        "new": false,
-                        "path": "/queue",
-                        "count": 0,
-                        "icon": "bx bx-list-ol",
-                        "items": []
-                    },
-                    {
-                        "id":"costing-cost-materials",
-                        "label": "Costs and Materials",
-                        "new": false,
-                        "path": "/costs",
-                        "count": 0,
-                        "icon": "bx bx-money",
-                        "items": []
-                    },
-                    {
-                        "id":"costing-estimates",
-                        "label": "Estimates",
-                        "new": false,
-                        "path": "/estimates",
                         "count": 0,
                         "icon": "bx bx-spreadsheet",
-                        "items": []
+                        "items": [
+                            {
+                                "id": "maps-gis-about",
+                                "label": "About Us",
+                                "path": "/about-us",
+                                "new": false,
+                                "subitems": []
+                            },
+                            {
+                                "id": "maps-gis-blog",
+                                "label": "Blog",
+                                "path": "",
+                                "new": true,
+                                "subitems": [
+                                    {
+                                        "id": "maps-gis-blog-blog",
+                                        
+                                        "label": "Blog1",
+                                        "path": "/blog",
+                                        "new": false
+                                    },
+                                    {
+                                        "id": "maps-gis-blog-details",
+                                        "label": "Blog 2",
+                                        "path": "/blog-details",
+                                        "new": true
+                                    },
+                                    {
+                                        "id": "maps-gis-blog-create",
+                                        "label": "Create 3",
+                                        "path": "/blog-details",
+                                        "new": false
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "maps-gis-chat",
+                                "label": "Chat",
+                                "path": "/chat",
+                                "new": false,
+                                "subitems": []
+                            }
+                        ]
                     }
                 ]
             }
+            
             
         ]
 }

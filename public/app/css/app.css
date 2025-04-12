@@ -1,8 +1,8 @@
 
 
 .landing-body .landing-banner::before {
-    background: linear-gradient(45deg, #ff6a00, #ee0979, #8e2de2);
-    /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+    /* background: linear-gradient(45deg, #ff6a00, #ee0979, #8e2de2); */
+    background: linear-gradient(135deg, #267C9C, #3EB9E1);
 }
 
 .landing-body .landing-main-image:before {

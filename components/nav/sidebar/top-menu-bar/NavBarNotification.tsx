@@ -1,11 +1,9 @@
-"use client";
+import PseudoLink from "@/components/elements/PseudoLink";
 
 const NavBarNotification = () => {
   return (
     <div className="header-element notifications-dropdown">
-      {/* Start::header-link|dropdown-toggle */}
-      <a
-        onClick={(e) => e.preventDefault()}
+      <PseudoLink
         className="header-link dropdown-toggle"
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
@@ -19,9 +17,7 @@ const NavBarNotification = () => {
         >
           5
         </span>
-      </a>
-      {/* End::header-link|dropdown-toggle */}
-      {/* Start::main-header-dropdown */}
+      </PseudoLink>
       <div
         className="main-header-dropdown dropdown-menu dropdown-menu-end"
         data-popper-placement="none"
@@ -56,12 +52,9 @@ const NavBarNotification = () => {
                   </span>
                 </div>
                 <div>
-                  <a
-                    onClick={(e) => e.preventDefault()}
-                    className="min-w-fit-content text-muted me-1 dropdown-item-close1"
-                  >
+                  <PseudoLink className="min-w-fit-content text-muted me-1 dropdown-item-close1">
                     <i className="ti ti-x fs-16" />
-                  </a>
+                  </PseudoLink>
                 </div>
               </div>
             </div>
@@ -83,12 +76,9 @@ const NavBarNotification = () => {
                   </span>
                 </div>
                 <div>
-                  <a
-                    onClick={(e) => e.preventDefault()}
-                    className="min-w-fit-content text-muted me-1 dropdown-item-close1"
-                  >
+                  <PseudoLink className="min-w-fit-content text-muted me-1 dropdown-item-close1">
                     <i className="ti ti-x fs-16" />
-                  </a>
+                  </PseudoLink>
                 </div>
               </div>
             </div>
@@ -110,12 +100,9 @@ const NavBarNotification = () => {
                   </span>
                 </div>
                 <div>
-                  <a
-                    onClick={(e) => e.preventDefault()}
-                    className="min-w-fit-content text-muted me-1 dropdown-item-close1"
-                  >
+                  <PseudoLink className="min-w-fit-content text-muted me-1 dropdown-item-close1">
                     <i className="ti ti-x fs-16" />
-                  </a>
+                  </PseudoLink>
                 </div>
               </div>
             </div>
@@ -140,12 +127,9 @@ const NavBarNotification = () => {
                   </span>
                 </div>
                 <div>
-                  <a
-                    onClick={(e) => e.preventDefault()}
-                    className="min-w-fit-content text-muted me-1 dropdown-item-close1"
-                  >
+                  <PseudoLink className="min-w-fit-content text-muted me-1 dropdown-item-close1">
                     <i className="ti ti-x fs-16" />
-                  </a>
+                  </PseudoLink>
                 </div>
               </div>
             </div>
@@ -170,12 +154,9 @@ const NavBarNotification = () => {
                   </span>
                 </div>
                 <div>
-                  <a
-                    onClick={(e) => e.preventDefault()}
-                    className="min-w-fit-content text-muted me-1 dropdown-item-close1"
-                  >
+                  <PseudoLink className="min-w-fit-content text-muted me-1 dropdown-item-close1">
                     <i className="ti ti-x fs-16" />
-                  </a>
+                  </PseudoLink>
                 </div>
               </div>
             </div>

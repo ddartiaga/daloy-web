@@ -575,7 +575,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-3">
                             <span className="avatar avatar-rounded">
-                              <img src="/assets/images/faces/2.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/2.jpg"
+                                alt="profile icon"
+                                width={32}
+                                height={32}
+                              />
                             </span>
                           </div>
                           <div>
@@ -644,7 +649,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-3">
                             <span className="avatar avatar-rounded">
-                              <img src="/assets/images/faces/8.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/8.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -713,7 +723,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-3">
                             <span className="avatar avatar-rounded">
-                              <img src="/assets/images/faces/13.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/13.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -782,7 +797,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-3">
                             <span className="avatar avatar-rounded">
-                              <img src="/assets/images/faces/11.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/11.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -851,7 +871,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-3">
                             <span className="avatar avatar-rounded">
-                              <img src="/assets/images/faces/5.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/5.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -990,7 +1015,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/1.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/1.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -1034,7 +1064,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/4.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/4.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -1078,7 +1113,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/6.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/6.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -1122,7 +1162,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/12.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/12.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -1166,7 +1211,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/3.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/3.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>
@@ -1210,7 +1260,12 @@ const page = () => {
                         <div className="d-flex align-items-center lh-1">
                           <div className="me-2">
                             <span className="avatar avatar-md avatar-rounded">
-                              <img src="/assets/images/faces/5.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/5.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div>

@@ -369,7 +369,12 @@ const page = () => {
                   <div className="card custom-card upgrade-card text-fixed-white">
                     <div className="card-body text-fixed-white">
                       <span className="avatar avatar-xxl">
-                        <img src="/assets/images/media/media-84.png" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/media/media-84.png"
+                          alt=""
+                        />
                       </span>
                       <div className="upgrade-card-content">
                         <span className="op-7 fw-normal mb-1">
@@ -765,7 +770,12 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img src="/assets/images/flags/us_flag.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/flags/us_flag.jpg"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="ms-3 flex-fill lh-1">
@@ -782,7 +792,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/germany_flag.jpg"
                           alt=""
                         />
@@ -802,7 +812,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/mexico_flag.jpg"
                           alt=""
                         />
@@ -822,7 +832,12 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img src="/assets/images/flags/uae_flag.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/flags/uae_flag.jpg"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="ms-3 flex-fill lh-1">
@@ -839,7 +854,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/argentina_flag.jpg"
                           alt=""
                         />
@@ -859,7 +874,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/russia_flag.jpg"
                           alt=""
                         />
@@ -879,7 +894,12 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img src="/assets/images/flags/china_flag.jpg" alt="" />
+                        <Image
+                          width={28}
+                          height={28}
+                          src="/assets/images/flags/china_flag.jpg"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="ms-3 flex-fill lh-1">
@@ -896,7 +916,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/french_flag.jpg"
                           alt=""
                         />
@@ -916,7 +936,7 @@ const page = () => {
                   <div className="d-flex align-items-center">
                     <div className="lh-1">
                       <span className="avatar avatar-sm avatar-rounded text-default">
-                        <img
+                        <Image width={28} height={28} 
                           src="/assets/images/flags/canada_flag.jpg"
                           alt=""
                         />

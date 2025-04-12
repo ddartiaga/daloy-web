@@ -1,4 +1,4 @@
-"use client";
+import PseudoLink from "./elements/PseudoLink";
 
 const OffCanvas = () => {
   return (
@@ -834,13 +834,9 @@ const OffCanvas = () => {
             </div>
           </div>
           <div className="d-grid canvas-footer">
-            <a
-              onClick={(e) => e.preventDefault()}
-              id="reset-all"
-              className="btn btn-danger m-1"
-            >
+            <PseudoLink id="reset-all" className="btn btn-danger m-1">
               Reset
-            </a>
+            </PseudoLink>
           </div>
         </div>
       </div>

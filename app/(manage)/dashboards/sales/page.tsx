@@ -810,19 +810,25 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/2.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/8.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/2.jpg"
                                   alt="img"
                                 />
@@ -850,13 +856,17 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/6.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/9.jpg"
                                   alt="img"
                                 />
@@ -884,25 +894,33 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/3.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/5.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/10.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/15.jpg"
                                   alt="img"
                                 />
@@ -930,7 +948,9 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/11.jpg"
                                   alt="img"
                                 />
@@ -958,19 +978,25 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/13.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/16.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/8.jpg"
                                   alt="img"
                                 />
@@ -998,13 +1024,17 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/10.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/5.jpg"
                                   alt="img"
                                 />
@@ -1059,13 +1089,17 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/5.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/9.jpg"
                                   alt="img"
                                 />
@@ -1093,19 +1127,25 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/11.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/12.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/13.jpg"
                                   alt="img"
                                 />
@@ -1133,7 +1173,9 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/4.jpg"
                                   alt="img"
                                 />
@@ -1161,13 +1203,17 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/1.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/2.jpg"
                                   alt="img"
                                 />
@@ -1195,25 +1241,33 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/5.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/3.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/11.jpg"
                                   alt="img"
                                 />
                               </span>
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/12.jpg"
                                   alt="img"
                                 />
@@ -1241,7 +1295,9 @@ const page = () => {
                           <td>
                             <div className="avatar-list-stacked mb-0">
                               <span className="avatar avatar-xs">
-                                <img
+                                <Image
+                                  width={28}
+                                  height={28}
                                   src="/assets/images/faces/1.jpg"
                                   alt="img"
                                 />
@@ -1452,7 +1508,9 @@ const page = () => {
                 <li className="list-group-item border-0">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/2.jpg"
                         alt="Image description"
@@ -1474,7 +1532,9 @@ const page = () => {
                 <li className="list-group-item border-0 mb-2">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/1.jpg"
                         alt="Image description"
@@ -1496,7 +1556,9 @@ const page = () => {
                 <li className="list-group-item border-0 mb-2">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/5.jpg"
                         alt="Image description"
@@ -1518,7 +1580,9 @@ const page = () => {
                 <li className="list-group-item border-0 mb-2">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/7.jpg"
                         alt="Image description"
@@ -1540,7 +1604,9 @@ const page = () => {
                 <li className="list-group-item border-0 mb-2">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/9.jpg"
                         alt="Image description"
@@ -1562,7 +1628,9 @@ const page = () => {
                 <li className="list-group-item border-0">
                   <a href="javascript:void(0);" className="border-0">
                     <div className="d-flex align-items-top">
-                      <img
+                      <Image
+                        width={28}
+                        height={28}
                         className="avatar avatar-md me-3 my-auto"
                         src="/assets/images/faces/11.jpg"
                         alt="Image description"
@@ -2140,7 +2208,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/15.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/15.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Simon Cowall</div>
@@ -2198,7 +2271,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/4.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/4.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Meisha Kerr</div>
@@ -2256,7 +2334,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/5.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/5.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Jessica</div>
@@ -2314,7 +2397,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/6.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/6.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Amanda B</div>
@@ -2372,7 +2460,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/11.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/11.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Jason Stathman</div>
@@ -2430,7 +2523,12 @@ const page = () => {
                         <div className="d-flex align-items-center">
                           <div className="me-2 lh-1">
                             <span className="avatar avatar-sm">
-                              <img src="/assets/images/faces/13.jpg" alt="" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/13.jpg"
+                                alt=""
+                              />
                             </span>
                           </div>
                           <div className="fs-14">Khabib Hussain</div>

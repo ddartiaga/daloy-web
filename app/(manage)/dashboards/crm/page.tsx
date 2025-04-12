@@ -108,7 +108,12 @@ const page = () => {
                         <div className="d-flex align-items-top flex-wrap">
                           <div className="me-2">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/10.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/10.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div className="flex-fill">
@@ -140,7 +145,12 @@ const page = () => {
                         <div className="d-flex align-items-top flex-wrap">
                           <div className="me-2">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/12.jpg" alt="" />
+                              <Image
+                                src="/assets/images/faces/12.jpg"
+                                alt=""
+                                width={28}
+                                height={28}
+                              />
                             </span>
                           </div>
                           <div className="flex-fill">
@@ -543,9 +553,11 @@ const page = () => {
                           <td>
                             <div className="d-flex align-items-center fw-semibold">
                               <span className="avatar avatar-sm me-2 avatar-rounded">
-                                <img
+                                <Image
                                   src="/assets/images/faces/4.jpg"
-                                  alt="img"
+                                  alt=""
+                                  width={28}
+                                  height={28}
                                 />
                               </span>
                               Mayor Kelly
@@ -591,9 +603,11 @@ const page = () => {
                           <td>
                             <div className="d-flex align-items-center fw-semibold">
                               <span className="avatar avatar-sm me-2 avatar-rounded">
-                                <img
+                                <Image
                                   src="/assets/images/faces/15.jpg"
-                                  alt="img"
+                                  alt=""
+                                  width={28}
+                                  height={28}
                                 />
                               </span>
                               Andrew Garfield
@@ -639,9 +653,11 @@ const page = () => {
                           <td>
                             <div className="d-flex align-items-center fw-semibold">
                               <span className="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="/assets/images/faces/11.jpg"
-                                  alt="img"
+                                <Image
+                                  src="/assets/images/faces/12.jpg"
+                                  alt=""
+                                  width={28}
+                                  height={28}
                                 />
                               </span>
                               Simon Cowel
@@ -688,9 +704,11 @@ const page = () => {
                           <td>
                             <div className="d-flex align-items-center fw-semibold">
                               <span className="avatar avatar-sm me-2 avatar-rounded">
-                                <img
+                                <Image
                                   src="/assets/images/faces/8.jpg"
-                                  alt="img"
+                                  alt=""
+                                  width={28}
+                                  height={28}
                                 />
                               </span>
                               Mirinda Hers
@@ -737,9 +755,11 @@ const page = () => {
                           <td>
                             <div className="d-flex align-items-center fw-semibold">
                               <span className="avatar avatar-sm me-2 avatar-rounded">
-                                <img
+                                <Image
                                   src="/assets/images/faces/9.jpg"
-                                  alt="img"
+                                  alt=""
+                                  width={28}
+                                  height={28}
                                 />
                               </span>
                               Jacob Smith

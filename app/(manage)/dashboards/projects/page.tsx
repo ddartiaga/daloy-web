@@ -211,7 +211,9 @@ const page = () => {
                             <div className="d-flex align-items-center justify-content-between">
                               <div className="d-flex align-items-top">
                                 <span className="avatar avatar-sm lh-1">
-                                  <img
+                                  <Image
+                                    width={28}
+                                    height={28}
                                     src="/assets/images/faces/2.jpg"
                                     alt=""
                                   />
@@ -234,7 +236,9 @@ const page = () => {
                             <div className="d-flex align-items-center justify-content-between">
                               <div className="d-flex align-items-top">
                                 <span className="avatar avatar-sm lh-1">
-                                  <img
+                                  <Image
+                                    width={28}
+                                    height={28}
                                     src="/assets/images/faces/12.jpg"
                                     alt=""
                                   />
@@ -257,7 +261,9 @@ const page = () => {
                             <div className="d-flex align-items-center justify-content-between">
                               <div className="d-flex align-items-top">
                                 <span className="avatar avatar-sm lh-1">
-                                  <img
+                                  <Image
+                                    width={28}
+                                    height={28}
                                     src="/assets/images/faces/1.jpg"
                                     alt=""
                                   />
@@ -280,7 +286,9 @@ const page = () => {
                             <div className="d-flex align-items-center justify-content-between">
                               <div className="d-flex align-items-top">
                                 <span className="avatar avatar-sm lh-1">
-                                  <img
+                                  <Image
+                                    width={28}
+                                    height={28}
                                     src="/assets/images/faces/15.jpg"
                                     alt=""
                                   />
@@ -303,7 +311,9 @@ const page = () => {
                             <div className="d-flex align-items-center justify-content-between">
                               <div className="d-flex align-items-top">
                                 <span className="avatar avatar-sm lh-1">
-                                  <img
+                                  <Image
+                                    width={28}
+                                    height={28}
                                     src="/assets/images/faces/10.jpg"
                                     alt=""
                                   />
@@ -386,19 +396,25 @@ const page = () => {
                                 <span className="d-block mt-1">
                                   <span className="avatar-list-stacked">
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/2.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/8.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/2.jpg"
                                         alt="img"
                                       />
@@ -431,13 +447,17 @@ const page = () => {
                                 <span className="d-block mt-1">
                                   <span className="avatar-list-stacked">
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/10.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/15.jpg"
                                         alt="img"
                                       />
@@ -470,19 +490,25 @@ const page = () => {
                                 <span className="d-block mt-1">
                                   <span className="avatar-list-stacked">
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/11.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/4.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/8.jpg"
                                         alt="img"
                                       />
@@ -515,13 +541,17 @@ const page = () => {
                                 <span className="d-block mt-1">
                                   <span className="avatar-list-stacked">
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/10.jpg"
                                         alt="img"
                                       />
                                     </span>
                                     <span className="avatar avatar-xs avatar-rounded">
-                                      <img
+                                      <Image
+                                        width={28}
+                                        height={28}
                                         src="/assets/images/faces/11.jpg"
                                         alt="img"
                                       />
@@ -600,13 +630,28 @@ const page = () => {
                           </div>
                           <div className="avatar-list-stacked">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/2.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/2.jpg"
+                                alt="img"
+                              />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/8.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/8.jpg"
+                                alt="img"
+                              />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/2.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/2.jpg"
+                                alt="img"
+                              />
                             </span>
                           </div>
                         </div>
@@ -634,10 +679,20 @@ const page = () => {
                           </div>
                           <div className="avatar-list-stacked">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/6.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/6.jpg"
+                                alt="img"
+                              />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/9.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/9.jpg"
+                                alt="img"
+                              />
                             </span>
                           </div>
                         </div>
@@ -665,10 +720,20 @@ const page = () => {
                           </div>
                           <div className="avatar-list-stacked">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/6.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/6.jpg"
+                                alt="img"
+                              />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/9.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/9.jpg"
+                                alt="img"
+                              />
                             </span>
                           </div>
                         </div>
@@ -693,16 +758,25 @@ const page = () => {
                           </div>
                           <div className="avatar-list-stacked">
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img src="/assets/images/faces/3.jpg" alt="img" />
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/assets/images/faces/3.jpg"
+                                alt="img"
+                              />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img
+                              <Image
+                                width={28}
+                                height={28}
                                 src="/assets/images/faces/14.jpg"
                                 alt="img"
                               />
                             </span>
                             <span className="avatar avatar-sm avatar-rounded">
-                              <img
+                              <Image
+                                width={28}
+                                height={28}
                                 src="/assets/images/faces/11.jpg"
                                 alt="img"
                               />
@@ -722,7 +796,9 @@ const page = () => {
             <div className="col-xxl-12">
               <div className="card custom-card shadow-none projects-tracking-card overflow-hidden text-center">
                 <div className="card-body">
-                  <img
+                  <Image
+                    width={28}
+                    height={28}
                     src="/assets/images/media/media-86.svg"
                     alt=""
                     className="mb-1"
@@ -998,13 +1074,28 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/2.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/2.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/8.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/8.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/2.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/2.jpg"
+                              alt="img"
+                            />
                           </span>
                           <a
                             className="avatar avatar-xs bg-primary avatar-rounded text-fixed-white"
@@ -1045,16 +1136,36 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/5.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/5.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/6.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/6.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/9.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/9.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/15.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/15.jpg"
+                              alt="img"
+                            />
                           </span>
                         </div>
                       </td>
@@ -1089,13 +1200,28 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/1.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/1.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/3.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/3.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/4.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/4.jpg"
+                              alt="img"
+                            />
                           </span>
                         </div>
                       </td>
@@ -1130,13 +1256,28 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/10.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/10.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/11.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/11.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/4.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/4.jpg"
+                              alt="img"
+                            />
                           </span>
                           <a
                             className="avatar avatar-xs bg-primary avatar-rounded text-fixed-white"
@@ -1177,13 +1318,28 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/2.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/2.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/9.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/9.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/16.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/16.jpg"
+                              alt="img"
+                            />
                           </span>
                           <a
                             className="avatar avatar-xs bg-primary avatar-rounded text-fixed-white"
@@ -1224,19 +1380,44 @@ const page = () => {
                       <td>
                         <div className="avatar-list-stacked">
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/4.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/4.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/7.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/7.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/12.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/12.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/13.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/13.jpg"
+                              alt="img"
+                            />
                           </span>
                           <span className="avatar avatar-xs avatar-rounded">
-                            <img src="/assets/images/faces/15.jpg" alt="img" />
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/images/faces/15.jpg"
+                              alt="img"
+                            />
                           </span>
                         </div>
                       </td>

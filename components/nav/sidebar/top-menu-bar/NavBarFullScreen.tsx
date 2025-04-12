@@ -1,12 +1,12 @@
 "use client";
 
+import PseudoLink from "@/components/elements/PseudoLink";
+
 const NavBarFullScreen = () => {
   return (
     <div className="header-element header-fullscreen">
-      <a
-        onClick={(e) => {
-          e.preventDefault();
-
+      <PseudoLink
+        onClick={() => {
           console.log("TODO: Implement openFullscreen()");
           // openFullscreen();
         }}
@@ -14,7 +14,7 @@ const NavBarFullScreen = () => {
       >
         <i className="bx bx-fullscreen full-screen-open header-link-icon" />
         <i className="bx bx-exit-fullscreen full-screen-close header-link-icon d-none" />
-      </a>
+      </PseudoLink>
     </div>
   );
 };

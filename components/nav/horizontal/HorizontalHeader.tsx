@@ -11,12 +11,16 @@ const HorizontalHeader = () => {
             <div className="header-element">
               <div className="horizontal-logo">
                 <a href="index.html" className="header-logo">
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/toggle-logo.png"
                     alt="logo"
                     className="toggle-logo"
                   />
-                  <img
+                  <Image
+                    width={92}
+                    height={32}
                     src="/assets/images/brand-logos/toggle-dark.png"
                     alt="logo"
                     className="toggle-dark"

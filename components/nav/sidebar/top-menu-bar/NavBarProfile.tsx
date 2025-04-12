@@ -1,10 +1,10 @@
-"use client";
+import Image from "next/image";
+import PseudoLink from "@/components/elements/PseudoLink";
 
 const NavBarProfile = () => {
   return (
     <div className="header-element">
-      <a
-        onClick={(e) => e.preventDefault()}
+      <PseudoLink
         className="header-link dropdown-toggle"
         id="mainHeaderProfile"
         data-bs-toggle="dropdown"
@@ -13,7 +13,7 @@ const NavBarProfile = () => {
       >
         <div className="d-flex align-items-center">
           <div className="me-sm-2 me-0">
-            <img
+            <Image
               src="/assets/images/faces/9.jpg"
               alt="img"
               width={32}
@@ -28,7 +28,7 @@ const NavBarProfile = () => {
             </span>
           </div>
         </div>
-      </a>
+      </PseudoLink>
       <ul
         className="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
         aria-labelledby="mainHeaderProfile"
@@ -62,13 +62,10 @@ const NavBarProfile = () => {
           </a>
         </li>
         <li>
-          <a
-            className="dropdown-item d-flex border-block-end"
-            onClick={(e) => e.preventDefault()}
-          >
+          <PseudoLink className="dropdown-item d-flex border-block-end">
             <i className="ti ti-wallet fs-18 me-2 op-7" />
             Bal: $7,12,950
-          </a>
+          </PseudoLink>
         </li>
         <li>
           <a className="dropdown-item d-flex" href="chat.html">

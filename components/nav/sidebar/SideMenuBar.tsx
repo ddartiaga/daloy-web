@@ -1,41 +1,53 @@
-"use client";
-
 import Image from "next/image";
 
 import React from "react";
 import menu from "./sidebar-menu.json";
+import Link from "next/link";
+import PseudoLink from "@/components/elements/PseudoLink";
 
 const SideMenuBar = () => {
   return (
     <aside className="app-sidebar sticky" id="sidebar">
       <div className="main-sidebar-header">
         <a href="index.html" className="header-logo">
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/desktop-logo.png"
             alt="logo"
             className="desktop-logo"
           />
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/toggle-logo.png"
             alt="logo"
             className="toggle-logo"
           />
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/desktop-dark.png"
             alt="logo"
             className="desktop-dark"
           />
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/toggle-dark.png"
             alt="logo"
             className="toggle-dark"
           />
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/desktop-white.png"
             alt="logo"
             className="desktop-white"
           />
-          <img
+          <Image
+            width={92}
+            height={32}
             src="/assets/images/brand-logos/toggle-white.png"
             alt="logo"
             className="toggle-white"
@@ -59,7 +71,7 @@ const SideMenuBar = () => {
             {menu.categories.map(({ id: cid, label, subcategory }) => (
               <React.Fragment key={cid}>
                 <li className="slide__category">
-                  <span className="category-name">{label}</span>
+                  <span className="category-name text-primary">{label}</span>
                 </li>
 
                 {subcategory.map(
@@ -67,19 +79,16 @@ const SideMenuBar = () => {
                     id: scid,
                     label,
                     items,
+                    path,
                     new: isNewSubCat,
-                    count,
                     icon,
                   }) => (
                     <li className="slide has-sub" key={scid}>
-                      <a
-                        onClick={(e) => e.preventDefault()}
-                        className="side-menu__item"
-                      >
+                      <Link href={path ?? ""} className="side-menu__item">
                         <i className={`${icon} side-menu__icon`} />
                         <span className="side-menu__label">
                           {label}
-                          {count > 0 && (
+                          {items.length > 0 && (
                             <span className="badge bg-warning-transparent ms-2">
                               {items.length}
                             </span>
@@ -90,12 +99,14 @@ const SideMenuBar = () => {
                             </span>
                           )}
                         </span>
-                        <i className="fe fe-chevron-right side-menu__angle" />
-                      </a>
+                        {items.length > 0 && (
+                          <i className="fe fe-chevron-right side-menu__angle" />
+                        )}
+                      </Link>
 
                       <ul className="slide-menu child1">
                         <li className="slide side-menu__label1">
-                          <a onClick={(e) => e.preventDefault()}>{label}</a>
+                          <PseudoLink>{label}</PseudoLink>
                         </li>
 
                         {items.map(
@@ -109,10 +120,7 @@ const SideMenuBar = () => {
                             <React.Fragment key={iid}>
                               {subitems.length > 0 ? (
                                 <li className="slide has-sub">
-                                  <a
-                                    onClick={(e) => e.preventDefault()}
-                                    className="side-menu__item"
-                                  >
+                                  <PseudoLink className="side-menu__item">
                                     {label}
                                     {isNewItem && (
                                       <span className="badge bg-secondary-transparent ms-2">
@@ -120,8 +128,7 @@ const SideMenuBar = () => {
                                       </span>
                                     )}
                                     <i className="fe fe-chevron-right side-menu__angle" />
-                                  </a>
-
+                                  </PseudoLink>
                                   <ul className="slide-menu child2">
                                     {subitems.map(
                                       ({

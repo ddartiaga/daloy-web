@@ -1,4 +1,5 @@
-"use client";
+import Link from "next/link";
+import PseudoLink from "../elements/PseudoLink";
 
 const SearchModal = () => {
   return (
@@ -13,57 +14,46 @@ const SearchModal = () => {
         <div className="modal-content">
           <div className="modal-body">
             <div className="input-group">
-              <a
-                href="javascript:void(0);"
-                className="input-group-text"
-                id="Search-Grid"
-              >
+              <PseudoLink className="input-group-text" id="Search-Grid">
                 <i className="fe fe-search header-link-icon fs-18" />
-              </a>
+              </PseudoLink>
               <input
                 type="search"
                 className="form-control border-0 px-2"
                 placeholder="Search"
                 aria-label="Username"
               />
-              <a
-                href="javascript:void(0);"
-                className="input-group-text"
-                id="voice-search"
-              >
+              <PseudoLink className="input-group-text" id="voice-search">
                 <i className="fe fe-mic header-link-icon" />
-              </a>
-              <a
-                href="javascript:void(0);"
+              </PseudoLink>
+              <PseudoLink
                 className="btn btn-light btn-icon"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <i className="fe fe-more-vertical" />
-              </a>
+              </PseudoLink>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="javascript:void(0);">
-                    Action
-                  </a>
+                  <PseudoLink className="dropdown-item">Action</PseudoLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="javascript:void(0);">
+                  <PseudoLink className="dropdown-item">
                     Another action
-                  </a>
+                  </PseudoLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="javascript:void(0);">
+                  <PseudoLink className="dropdown-item">
                     Something else here
-                  </a>
+                  </PseudoLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="javascript:void(0);">
+                  <PseudoLink className="dropdown-item">
                     Separated link
-                  </a>
+                  </PseudoLink>
                 </li>
               </ul>
             </div>
@@ -74,46 +64,30 @@ const SearchModal = () => {
               <span className="search-tags alert">
                 <i className="fe fe-user me-2" />
                 People
-                <a
-                  href="javascript:void(0)"
-                  className="tag-addon"
-                  data-bs-dismiss="alert"
-                >
+                <PseudoLink className="tag-addon" data-bs-dismiss="alert">
                   <i className="fe fe-x" />
-                </a>
+                </PseudoLink>
               </span>
               <span className="search-tags alert">
                 <i className="fe fe-file-text me-2" />
                 Pages
-                <a
-                  href="javascript:void(0)"
-                  className="tag-addon"
-                  data-bs-dismiss="alert"
-                >
+                <PseudoLink className="tag-addon" data-bs-dismiss="alert">
                   <i className="fe fe-x" />
-                </a>
+                </PseudoLink>
               </span>
               <span className="search-tags alert">
                 <i className="fe fe-align-left me-2" />
                 Articles
-                <a
-                  href="javascript:void(0)"
-                  className="tag-addon"
-                  data-bs-dismiss="alert"
-                >
+                <PseudoLink className="tag-addon" data-bs-dismiss="alert">
                   <i className="fe fe-x" />
-                </a>
+                </PseudoLink>
               </span>
               <span className="search-tags alert">
                 <i className="fe fe-server me-2" />
                 Tags
-                <a
-                  href="javascript:void(0)"
-                  className="tag-addon"
-                  data-bs-dismiss="alert"
-                >
+                <PseudoLink className="tag-addon" data-bs-dismiss="alert">
                   <i className="fe fe-x" />
-                </a>
+                </PseudoLink>
               </span>
             </div>
             <div className="my-4">
@@ -121,43 +95,40 @@ const SearchModal = () => {
                 Recent Search :
               </p>
               <div className="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
-                <a href="notifications.html">
+                <Link href="notifications.html">
                   <span>Notifications</span>
-                </a>
-                <a
+                </Link>
+                <PseudoLink
                   className="ms-auto lh-1"
-                  href="javascript:void(0);"
                   data-bs-dismiss="alert"
                   aria-label="Close"
                 >
                   <i className="fe fe-x text-muted" />
-                </a>
+                </PseudoLink>
               </div>
               <div className="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
-                <a href="alerts.html">
+                <Link href="notifications.html">
                   <span>Alerts</span>
-                </a>
-                <a
+                </Link>
+                <PseudoLink
                   className="ms-auto lh-1"
-                  href="javascript:void(0);"
                   data-bs-dismiss="alert"
                   aria-label="Close"
                 >
                   <i className="fe fe-x text-muted" />
-                </a>
+                </PseudoLink>
               </div>
               <div className="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
-                <a href="mail.html">
+                <Link href="mail.html">
                   <span>Mail</span>
-                </a>
-                <a
+                </Link>
+                <PseudoLink
                   className="ms-auto lh-1"
-                  href="javascript:void(0);"
                   data-bs-dismiss="alert"
                   aria-label="Close"
                 >
                   <i className="fe fe-x text-muted" />
-                </a>
+                </PseudoLink>
               </div>
             </div>
           </div>

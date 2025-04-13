@@ -1,21 +1,21 @@
 "use client";
 
-import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { zodResolver } from "@hookform/resolvers/zod";
 import Script from "next/script";
-import { signUpSchema, signUpSchemaType } from "./schemas";
+// import { useForm } from "react-hook-form";
+// import { zodResolver } from "@hookform/resolvers/zod";
+// import { signUpSchema, signUpSchemaType } from "./schemas";
 
 const SignUpForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setConfirmPassword] = useState(false);
 
-  const {
-    register,
-    formState: { errors },
-  } = useForm<signUpSchemaType>({
-    resolver: zodResolver(signUpSchema),
-  });
+  // const {
+  //   register,
+  //   formState: { errors },
+  // } = useForm<signUpSchemaType>({
+  //   resolver: zodResolver(signUpSchema),
+  // });
 
   return (
     <>

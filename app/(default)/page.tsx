@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Landing = () => {
   return (
@@ -10,25 +11,21 @@ const Landing = () => {
               <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-8">
                 <div className="py-lg-5">
                   <div className="mb-3">
-                    <h6 className="fw-semibold text-fixed-white op-9">
-                      KATALYST
-                    </h6>
+                    <h6 className="fw-semibold text-fixed-white op-9">DALOY</h6>
                   </div>
                   <p className="landing-banner-heading mb-3">
-                    DALOY -<span className="text-secondary"></span>
+                    DALOY is a cloud platform for water utility operations and
+                    infrastructure monitoring.
                   </p>
                   <div className="fs-16 mb-5 text-fixed-white op-7">
-                    Cloud eBPLS (Cloud Electronic Business Permit and Licensing
-                    System) is a cloud-based platform that helps local
-                    governments process business permits online. It replaces
-                    manual steps with digital tools, making it faster, more
-                    accurate, and more convenient for both LGUs and business
-                    owners.
+                    A cloud-based platform that helps water providers monitor
+                    infrastructure, manage operations, and respond to issues in
+                    real time — all in one place.
                   </div>
-                  <a href="index.html" className="m-1 btn btn-primary">
-                    View Demos
+                  <Link href="/dashboards/crm" className="m-1 btn btn-primary">
+                    View Management UI
                     <i className="ri-eye-line ms-2 align-middle" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-4">
@@ -36,7 +33,7 @@ const Landing = () => {
                   <Image
                     width={420}
                     height={420}
-                    src="/assets/images/media/landing/1.png"
+                    src="/app/images/two-successful-professionals.png"
                     alt=""
                     className="img-fluid"
                   />
@@ -216,14 +213,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -254,14 +251,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -292,14 +289,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -330,14 +327,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -368,14 +365,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -406,14 +403,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -451,14 +448,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -489,14 +486,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -527,14 +524,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -565,14 +562,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -603,14 +600,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.
@@ -641,14 +638,14 @@ const Landing = () => {
                       >
                         <div className="accordion-body">
                           <strong>
-                            This is the first item's accordion body.
+                            This is the first item&apos;s accordion body.
                           </strong>{" "}
                           It is shown by default, until the collapse plugin adds
                           the appropriate classes that we use to style each
                           element. These classes control the overall appearance,
                           as well as the showing and hiding via CSS transitions.
                           You can modify any of this with custom CSS or
-                          overriding our default variables. It's also worth
+                          overriding our default variables. It&apos;s also worth
                           noting that just about any HTML can go within the
                           <code>.accordion-body</code>, though the transition
                           does limit overflow.

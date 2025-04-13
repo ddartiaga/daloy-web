@@ -89,7 +89,7 @@
                         "id":"management-ticketing",
                         "label": "Ticketing",
                         "new": false,
-                        "path": "/ticketing",
+                        "path": "/tickets",
                         "count": 0,
                         "icon": "bx bx-task",
                         "items": []

@@ -10,6 +10,7 @@
                         "new": false,
                         "path": null,
                         "icon": "bx bx-chart",
+                        "open": true,
                         "items": [
                             {
                                 "id": "main-dashboard-item-crm",
@@ -61,6 +62,7 @@
                         "path": "/reports",
                         "count": 0,
                         "icon": "bx bx-file",
+                        "open": true,
                         "items": []
                     }
                 ]
@@ -76,6 +78,7 @@
                         "path": "/gis/map",
                         "count": 0,
                         "icon": "bx bx-map-alt",
+                        "open": true,
                         "items": []
                     }
                 ]
@@ -92,6 +95,7 @@
                         "path": "/tickets",
                         "count": 0,
                         "icon": "bx bx-task",
+                        "open": true,
                         "items": []
                     }
                 ]
@@ -107,6 +111,7 @@
                         "path": "/queue",
                         "count": 0,
                         "icon": "bx bx-list-ol",
+                        "open": true,
                         "items": []
                     },
                     {
@@ -116,6 +121,7 @@
                         "path": "/costs",
                         "count": 0,
                         "icon": "bx bx-money",
+                        "open": true,
                         "items": []
                     },
                     {
@@ -125,6 +131,7 @@
                         "path": "/estimates",
                         "count": 0,
                         "icon": "bx bx-spreadsheet",
+                        "open": true,
                         "items": []
                     }
                 ]

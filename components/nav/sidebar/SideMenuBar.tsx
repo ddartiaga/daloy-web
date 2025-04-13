@@ -4,6 +4,7 @@ import React from "react";
 import menu from "./sidebar-menu.json";
 import Link from "next/link";
 import PseudoLink from "@/components/elements/PseudoLink";
+import clsx from "clsx";
 
 const SideMenuBar = () => {
   return (
@@ -81,9 +82,13 @@ const SideMenuBar = () => {
                     items,
                     path,
                     new: isNewSubCat,
+                    open,
                     icon,
                   }) => (
-                    <li className="slide has-sub" key={scid}>
+                    <li
+                      className={clsx("slide has-sub", open && "open")}
+                      key={scid}
+                    >
                       <Link href={path ?? ""} className="side-menu__item">
                         <i className={`${icon} side-menu__icon`} />
                         <span className="side-menu__label">

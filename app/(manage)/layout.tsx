@@ -25,7 +25,19 @@ export const metadata: Metadata = {
   ],
 };
 
-export const revalidate = false;
+import "@/public/assets/libs/bootstrap/css/bootstrap.min.css";
+import "@/public/assets/css/styles.min.css";
+import "@/public/assets/css/icons.css";
+import "@/public/assets/libs/node-waves/waves.min.css";
+import "@/public/assets/libs/simplebar/simplebar.min.css";
+
+import "@/public/assets/libs/flatpickr/flatpickr.min.css";
+import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
+import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
+import "@/public/assets/libs/jsvectormap/css/jsvectormap.min.css";
+import "@/public/assets/libs/swiper/swiper-bundle.min.css";
+
+
 
 export default function RootLayout({
   children,
@@ -58,7 +70,7 @@ export default function RootLayout({
         />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
 
-        <link
+        {/* <link
           href="/assets/libs/bootstrap/css/bootstrap.min.css"
           rel="stylesheet"
         />
@@ -89,7 +101,7 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="/assets/libs/swiper/swiper-bundle.min.css"
-        />
+        /> */}
       </head>
       <body>
         <OffCanvas />

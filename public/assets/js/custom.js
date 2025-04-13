@@ -244,8 +244,7 @@
       localStorage.removeItem("bodylightRGB");
       localStorage.removeItem("bodyBgRGB");
       if (localStorage.getItem("ynexlayout") != "horizontal") {
-        console.log("theme override")
-        // html.setAttribute("data-menu-styles", "dark");
+        html.setAttribute("data-menu-styles", "dark");
       }
       html.setAttribute("data-header-styles", "light");
     } else {

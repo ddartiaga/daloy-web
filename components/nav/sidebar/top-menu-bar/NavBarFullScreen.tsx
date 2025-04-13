@@ -1,3 +1,5 @@
+"use client";
+
 import PseudoLink from "@/components/elements/PseudoLink";
 
 const NavBarFullScreen = () => {

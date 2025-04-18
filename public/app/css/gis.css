@@ -16,6 +16,10 @@
 } */
 
 
-.no-padding {
-    padding: 0 !important;
+.main-content {
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
 }

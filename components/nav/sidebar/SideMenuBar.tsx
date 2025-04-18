@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import React from "react";
-import menu from "./sidebar-menu.json";
+import menu from "./daloy-menu.json";
 import Link from "next/link";
 import PseudoLink from "@/components/elements/PseudoLink";
 import clsx from "clsx";
@@ -72,7 +72,9 @@ const SideMenuBar = () => {
             {menu.categories.map(({ id: cid, label, subcategory }) => (
               <React.Fragment key={cid}>
                 <li className="slide__category">
-                  <span className="category-name text-primary">{label}</span>
+                  <span className="category-name text-primary fs-bold">
+                    {label}
+                  </span>
                 </li>
 
                 {subcategory.map(
@@ -82,13 +84,9 @@ const SideMenuBar = () => {
                     items,
                     path,
                     new: isNewSubCat,
-                    open,
                     icon,
                   }) => (
-                    <li
-                      className={clsx("slide has-sub", open && "open")}
-                      key={scid}
-                    >
+                    <li className={clsx("slide has-sub")} key={scid}>
                       <Link href={path ?? ""} className="side-menu__item">
                         <i className={`${icon} side-menu__icon`} />
                         <span className="side-menu__label">
@@ -119,11 +117,23 @@ const SideMenuBar = () => {
                             id: iid,
                             label,
                             path,
-                            subitems,
                             new: isNewItem,
+                            // subitems NOTE: uncomment if with subitems, see menu.json
                           }) => (
                             <React.Fragment key={iid}>
-                              {subitems.length > 0 ? (
+                              <li className="slide">
+                                <a href={path} className="side-menu__item">
+                                  {label}
+                                  {isNewItem && (
+                                    <span className="badge bg-secondary-transparent ms-2">
+                                      New
+                                    </span>
+                                  )}
+                                </a>
+                              </li>
+                              {/* NOTE: uncomment if with subitems, see menu.json
+                              for example */}
+                              {/* {subitems.length > 0 ? (
                                 <li className="slide has-sub">
                                   <PseudoLink className="side-menu__item">
                                     {label}
@@ -170,7 +180,7 @@ const SideMenuBar = () => {
                                     )}
                                   </a>
                                 </li>
-                              )}
+                              )} */}
                             </React.Fragment>
                           )
                         )}

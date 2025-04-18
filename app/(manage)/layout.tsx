@@ -9,7 +9,7 @@ import SearchModal from "@/components/modals/SearchModal";
 import OffCanvas from "@/components/OffCanvas";
 
 export const metadata: Metadata = {
-  title: "Cloud eBPLS",
+  title: "DALOY",
   description: "Cloud Electronic Business Permits and Licensing System (EBPLS)",
   keywords: [
     "eBPLS",
@@ -36,8 +36,6 @@ import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
 import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
 import "@/public/assets/libs/jsvectormap/css/jsvectormap.min.css";
 import "@/public/assets/libs/swiper/swiper-bundle.min.css";
-
-
 
 export default function RootLayout({
   children,
@@ -177,6 +175,18 @@ export default function RootLayout({
 
         <Script
           src="/assets/libs/moment/moment.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/js/analytics-dashboard.js"
+          strategy="afterInteractive"
+        />
+
+        <Script src="/assets/js/custom.js" strategy="afterInteractive" />
+
+        <Script
+          src="/assets/js/custom-switcher.min.js"
           strategy="afterInteractive"
         />
       </body>

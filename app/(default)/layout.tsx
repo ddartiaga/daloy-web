@@ -29,12 +29,10 @@ import "@/public/assets/css/styles.min.css";
 import "@/public/assets/css/icons.css";
 import "@/public/assets/libs/node-waves/waves.min.css";
 import "@/public/assets/libs/simplebar/simplebar.min.css";
-
+import "@/public/assets/libs/swiper/swiper-bundle.min.css";
 import "@/public/assets/libs/flatpickr/flatpickr.min.css";
 import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
 import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
-
-import "@/public/app/css/app.css";
 
 export default function RootLayout({
   children,

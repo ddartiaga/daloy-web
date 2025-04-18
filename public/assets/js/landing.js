@@ -93,10 +93,9 @@ nanoButtons[0].click();
 document.getElementById("year").innerHTML = new Date().getFullYear();
 /* footer year */
 
-let mainContent;
 (function () {
   let html = document.querySelector("html");
-  mainContent = document.querySelector(".main-content");
+  let mainContent = document.querySelector(".main-content");
 
   localStorageBackup();
   switcherClick();

@@ -37,6 +37,8 @@ import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
 import "@/public/assets/libs/jsvectormap/css/jsvectormap.min.css";
 import "@/public/assets/libs/swiper/swiper-bundle.min.css";
 
+import "@/public/app/css/app.css";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -107,11 +109,8 @@ export default function RootLayout({
         <div className="page">
           <VerticalHeader />
           <SideMenuBar />
-          <div className="main-content app-content">
-            <div className="container-fluid">
-              <div className="mt-3"></div>
-              {children}
-            </div>
+          <div id="main-content" className="main-content app-content">
+            <div id="child-content" className="container-fluid">{children}</div>
           </div>
           <SearchModal />
           <CountryModal />

@@ -40,7 +40,7 @@
                     "id":"maps-gis",
                     "label": "GIS",
                     "new": false,
-                    "path": "/daloy/map",
+                    "path": "/daloy/gis",
                     "count": 0,
                     "icon": "bx bx-map-alt",
                     "items": []

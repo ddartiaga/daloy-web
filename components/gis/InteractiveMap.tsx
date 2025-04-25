@@ -1,17 +1,12 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 
 import { Map, IControl, GeolocateControl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 import MapboxDraw from "maplibre-gl-draw";
 import "maplibre-gl-draw/dist/mapbox-gl-draw.css";
-import { MapButtonGroupControl } from "./controls/MapButtonGroupControl";
-import {
-  MoreOptionsControl,
-  MoreOptionsFancyControl,
-} from "./MoreOptionsDropDownControl";
 import { SettingsControl } from "./SettingsButtonControl";
 
 type MapboxDrawControl = MapboxDraw & IControl;
@@ -114,7 +109,7 @@ const InteractiveMap = () => {
       mapRef.current = undefined;
       mapDrawRef.current = undefined;
     };
-  }, []);
+  }, [apiKey]);
 
   return (
     <div ref={mapContainerRef} style={{ height: "100vh", width: "100%" }}></div>

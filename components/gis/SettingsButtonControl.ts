@@ -1,4 +1,3 @@
-import { MapButtonControl } from "./controls/MapButtonControl";
 import { MapButtonGroupControl } from "./controls/MapButtonGroupControl";
 
 type ButtonElementProps = {

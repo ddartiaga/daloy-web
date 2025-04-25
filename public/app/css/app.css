@@ -19,3 +19,13 @@
 .no-padding {
     padding: 0 !important;
 }
+
+.maplibre-horizontal-controls {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+/* Add separator to every button *except* the first */
+.maplibre-horizontal-controls button + button {
+    border-left: 1px solid #ccc; /* gray line */
+}

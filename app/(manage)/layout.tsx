@@ -6,16 +6,15 @@ import SideMenuBar from "@/components/nav/sidebar/SideMenuBar";
 import Loader from "@/components/Loader";
 import CountryModal from "@/components/modals/CountryModal";
 import SearchModal from "@/components/modals/SearchModal";
-import OffCanvas from "@/components/OffCanvas";
+import OffCanvas from "@/components/Switcher";
 
 export const metadata: Metadata = {
   title: "DALOY",
-  description: "Cloud Electronic Business Permits and Licensing System (EBPLS)",
+  description: "Cloud Water District Operation System",
   keywords: [
-    "eBPLS",
-    "Electronic Business Permits and Licensing System",
-    "Cloud eBPLS",
-    "Cloud Electronic Business Permits and Licensing System",
+    "DALOY",
+    "Cloud Water District Operation System",
+    "Water District Operation System",
   ],
   authors: [
     {
@@ -36,6 +35,8 @@ import "@/public/assets/libs/@simonwep/pickr/themes/nano.min.css";
 import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
 import "@/public/assets/libs/jsvectormap/css/jsvectormap.min.css";
 import "@/public/assets/libs/swiper/swiper-bundle.min.css";
+
+import "react-phone-number-input/style.css";
 
 import "@/public/app/css/app.css";
 
@@ -69,39 +70,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script src="/assets/js/main.js" strategy="afterInteractive" />
-
-        {/* <link
-          href="/assets/libs/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link href="/assets/css/styles.min.css" rel="stylesheet" />
-        <link href="/assets/css/icons.css" rel="stylesheet" />
-        <link href="/assets/libs/node-waves/waves.min.css" rel="stylesheet" />
-        <link
-          href="/assets/libs/simplebar/simplebar.min.css"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/flatpickr/flatpickr.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/@simonwep/pickr/themes/nano.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/choices.js/public/assets/styles/choices.min.css"
-        />
-
-        <link
-          rel="stylesheet"
-          href="/assets/libs/jsvectormap/css/jsvectormap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="/assets/libs/swiper/swiper-bundle.min.css"
-        /> */}
       </head>
       <body>
         <OffCanvas />
@@ -110,7 +78,9 @@ export default function RootLayout({
           <VerticalHeader />
           <SideMenuBar />
           <div id="main-content" className="main-content app-content">
-            <div id="child-content" className="container-fluid">{children}</div>
+            <div id="child-content" className="container-fluid">
+              {children}
+            </div>
           </div>
           <SearchModal />
           <CountryModal />
@@ -174,6 +144,16 @@ export default function RootLayout({
 
         <Script
           src="/assets/libs/moment/moment.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/libs/flatpickr/flatpickr.min.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/js/date&time_pickers.js"
           strategy="afterInteractive"
         />
 

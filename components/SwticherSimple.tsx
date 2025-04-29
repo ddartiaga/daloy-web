@@ -1,6 +1,6 @@
 import React from "react";
 
-const OffCanvasSimple = () => {
+const SwticherSimple = () => {
   return (
     <div
       className="offcanvas offcanvas-end"
@@ -152,4 +152,4 @@ const OffCanvasSimple = () => {
   );
 };
 
-export default OffCanvasSimple;
+export default SwticherSimple;

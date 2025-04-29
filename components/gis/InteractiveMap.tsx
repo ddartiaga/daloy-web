@@ -3,17 +3,26 @@
 import { useRef, useEffect } from "react";
 
 import { Map, IControl, GeolocateControl } from "maplibre-gl";
+import { Feature, GeoJsonProperties, Geometry } from "geojson";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 import MapboxDraw from "maplibre-gl-draw";
 import "maplibre-gl-draw/dist/mapbox-gl-draw.css";
-import { SettingsControl } from "./SettingsButtonControl";
+import { NewButtonControl } from "./controls/NewButtonControl";
+
+import { useMapStore } from "./store";
 
 type MapboxDrawControl = MapboxDraw & IControl;
 
+type DrawEvent = {
+  type: string;
+  features: Feature[];
+};
+
 const InteractiveMap = () => {
-  // const [designerMode, setDesignerMode] = useState(false);
-  // const mapModeRef = useRef<IControl | undefined>(undefined);
+  const drawingMode = useMapStore((state) => state.drawingMode);
+  const setDrawnFeature = useMapStore((state) => state.setDrawnFeature);
+  const setSelectedFeature = useMapStore((state) => state.setSelectedFeature);
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | undefined>(undefined);
@@ -21,59 +30,39 @@ const InteractiveMap = () => {
 
   const apiKey = process.env.NEXT_PUBLIC_MAPTILER_API_KEY;
 
+  // for wider map
   useEffect(() => {
+    document?.getElementById("main-content")?.classList.add("no-padding");
+    document?.getElementById("child-content")?.classList.add("no-padding");
+
+    return () => {
+      document?.getElementById("main-content")?.classList.remove("no-padding");
+      document?.getElementById("child-content")?.classList.remove("no-padding");
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!mapContainerRef.current) return;
+
     const map = new Map({
-      container: mapContainerRef.current!,
+      container: mapContainerRef.current,
       style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apiKey}`,
       center: [120.9367, 14.3294], // Dasmariñas
       zoom: 12,
       minZoom: 10,
-      doubleClickZoom: false,
     });
 
     const draw = new MapboxDraw({
       displayControlsDefault: false,
-      controls: {
-        polygon: true,
-        line_string: true,
-        point: true,
-        trash: true,
-      },
+      controls: {},
     }) as MapboxDrawControl;
 
-    map.on("draw.create", (e) => {
-      console.log("Feature created:", e.features);
-    });
+    mapRef.current = map;
 
-    map.on("draw.update", (e) => {
-      console.log("Feature updated:", e.features);
-    });
+    mapRef.current?.addControl(draw);
+    mapDrawRef.current = draw;
 
-    map.on("draw.delete", (e) => {
-      console.log("Feature deleted:", e.features);
-    });
-
-    map.on("dblclick", (e) => {
-      console.log("dbclick", e);
-      e.preventDefault();
-
-      const features = map.queryRenderedFeatures(e.point);
-
-      // Filter only features from the Draw source
-      const drawnFeature = features.find(
-        (f) =>
-          f.source === "mapbox-gl-draw-cold" ||
-          f.source === "mapbox-gl-draw-hot"
-      );
-
-      if (drawnFeature) {
-        const geometryType = drawnFeature.geometry?.type;
-        console.log(geometryType);
-        console.log(drawnFeature);
-      }
-    });
-
-    map.on("load", () => {
+    mapRef.current.on("load", () => {
       //map.addControl(new NavigationControl(), "top-right");
 
       const geoLocate = map.addControl(
@@ -89,8 +78,8 @@ const InteractiveMap = () => {
       );
 
       geoLocate.on("geolocate", () => {
-        if (map.getLayer("geolocateAccuracyCircle")) {
-          map.setLayoutProperty(
+        if (mapRef.current?.getLayer("geolocateAccuracyCircle")) {
+          mapRef.current?.setLayoutProperty(
             "geolocateAccuracyCircle",
             "visibility",
             "none"
@@ -98,12 +87,8 @@ const InteractiveMap = () => {
         }
       });
 
-      map.addControl(draw);
-      map.addControl(SettingsControl());
+      mapRef.current?.addControl(NewButtonControl());
     });
-
-    mapRef.current = map;
-    mapDrawRef.current = draw;
 
     return () => {
       mapRef.current = undefined;
@@ -111,8 +96,57 @@ const InteractiveMap = () => {
     };
   }, [apiKey]);
 
+  useEffect(() => {
+    // will be invoke when `drawingMode' is changed
+
+    if (!mapDrawRef.current || !mapDrawRef.current?.getMode) return;
+
+    const onDraw = (e: DrawEvent) => {
+      const drawn = e.features[0] as Feature<Geometry, GeoJsonProperties>;
+      setDrawnFeature(drawn);
+
+      console.log("draw:", drawn);
+    };
+
+    const onView = (e: DrawEvent) => {
+      const selected = e.features[0] as Feature<Geometry, GeoJsonProperties>;
+      console.log("Selected: ", selected);
+
+      if (selected) {
+        setSelectedFeature(selected);
+      }
+    };
+
+    if (drawingMode) {
+      mapDrawRef.current.changeMode(drawingMode);
+
+      console.log("Drawing Mode:", drawingMode);
+
+      if (drawingMode == "simple_select") {
+        mapRef.current?.off("draw.create", onDraw);
+        mapRef.current?.off("draw.update", onDraw);
+
+        mapRef.current?.on("draw.selectionchange", onView);
+      } else {
+        mapRef.current?.off("draw.selectionchange", onView);
+
+        mapRef.current?.on("draw.create", onDraw);
+        mapRef.current?.on("draw.update", onDraw);
+
+        mapRef.current?.on("draw.delete", (e) => {
+          console.log("Feature deleted:", e.features);
+        });
+      }
+    }
+  }, [drawingMode]);
+
   return (
-    <div ref={mapContainerRef} style={{ height: "100vh", width: "100%" }}></div>
+    <>
+      <div
+        ref={mapContainerRef}
+        style={{ height: "87vh", width: "100%" }}
+      ></div>
+    </>
   );
 };
 

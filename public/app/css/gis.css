@@ -1,25 +1,2 @@
 
 
-/* .landing-body .landing-banner::before {
-    background: linear-gradient(45deg, #ff6a00, #ee0979, #8e2de2);
-    background: linear-gradient(135deg, #267C9C, #3EB9E1); 
-}
-
-.landing-body .landing-main-image:before {
-    inset-inline-start: 3rem;
-}
-
-.landing-body .landing-main-image img {
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-} */
-
-
-.main-content {
-    padding: 0;
-}
-
-.container-fluid {
-    padding: 0;
-}

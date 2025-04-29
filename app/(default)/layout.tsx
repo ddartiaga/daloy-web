@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Footer from "@/components/Footer";
-import OffCanvasSimple from "@/components/OffCanvasSimple";
+import OffCanvasSimple from "@/components/SwticherSimple";
 import HorizontalHeader from "@/components/nav/horizontal/HorizontalHeader";
 import HorizontalMenuBar from "@/components/nav/horizontal/HorizontalMenuBar";
 

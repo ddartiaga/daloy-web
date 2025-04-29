@@ -1,6 +1,6 @@
 import PseudoLink from "./elements/PseudoLink";
 
-const OffCanvas = () => {
+const Switcher = () => {
   return (
     <div
       className="offcanvas offcanvas-end"
@@ -844,4 +844,4 @@ const OffCanvas = () => {
   );
 };
 
-export default OffCanvas;
+export default Switcher;

@@ -29,3 +29,8 @@
 .maplibre-horizontal-controls button + button {
     border-left: 1px solid #ccc; /* gray line */
 }
+
+/* remove caret in dropdown item */
+.no-dd-arrow::before {
+    display: none !important;
+}

@@ -1,45 +1,19 @@
 "use client";
 
-import { z } from "zod";
+import { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import PhoneInput from "react-phone-number-input";
-import { isValidPhoneNumber } from "libphonenumber-js";
-import { useMapStore } from "../gis/store";
 import clsx from "clsx";
 
-const customerSchema = z.object({
-  customerId: z.string().min(1, "Customer ID is required"),
-  classification: z.string(),
-  status: z.string(),
-  cistern: z.string(),
-  connectionDate: z.string().refine((value) => {
-    return value ? !isNaN(Date.parse(value)) : true;
-  }, "Invalid Date"),
-  meterId: z.string(),
-  meterBrand: z.string(),
-  meterSize: z.string(),
-  lastName: z.string().min(1, "Last Name is required"),
-  firstName: z.string().min(1, "First Name is required"),
-  middleName: z.string(),
-  address: z.string().min(1, "Address is required"),
-  primaryContact: z
-    .string()
-    .min(1, "Primary Contact is required")
-    .refine((value) => isValidPhoneNumber(value, "PH"), {
-      message: "Invalid phone number",
-    }),
-  alternativeContact: z.string().refine(
-    (value) => {
-      return value ? isValidPhoneNumber(value, "PH") : true;
-    },
-    {
-      message: "Invalid phone number",
-    }
-  ),
-});
+import PhoneInput from "react-phone-number-input";
 
-type CustomerData = z.infer<typeof customerSchema>;
+import { useMapStore } from "@/components/map/store";
+import {
+  CustomerDataType,
+  customerSchema,
+  CustomerWithGeoFeatureType,
+} from "./schema";
+import { upsertCustomerAndFeatureAction } from "./server-actions";
 
 const PhoneNumberInput = (props: React.ComponentPropsWithoutRef<"input">) => (
   <input {...props} className={`form-control ${props.className || ""}`} />
@@ -54,19 +28,68 @@ const CustomerForm = ({ offCanvas = false }: CustomerFormProps) => {
     register,
     control,
     handleSubmit,
+    reset,
+    setValue,
     formState: { errors },
-  } = useForm<CustomerData>({
+  } = useForm<CustomerDataType>({
     resolver: zodResolver(customerSchema),
+    defaultValues: {},
   });
 
-  const drawnFeature = useMapStore((state) => state.drawnFeature);
+  const selectedFeature = useMapStore((state) => state.selectedFeature);
 
-  const formSubmit = (data: CustomerData) => {
-    if (drawnFeature) {
-      const payload = { ...drawnFeature, properties: { ...data } };
-      console.log(JSON.stringify(payload));
+  const geoCodeAddress = useMapStore((state) => state.drawnReverseGeoCode);
+  const setDrawingMode = useMapStore((state) => state.setDrawingMode);
+
+  // Update default value when drawnFeature changes:
+  useEffect(() => {
+    if (selectedFeature && selectedFeature.properties?.length > 0) {
+      if ("entity" in selectedFeature.properties!) {
+        if (selectedFeature.properties.entity) {
+          console.log(
+            "properies contains 'entity' with value:",
+            selectedFeature.properties.entity
+          );
+          console.log("resetting data");
+          reset(selectedFeature.properties!);
+        } else {
+          console.log("entity is not in the properties");
+
+          // TODO: close off-canvas
+        }
+      }
     } else {
-      console.log("Must select a drawing");
+      console.log("Customer Form: selectedFeature changed");
+    }
+  }, [selectedFeature, reset]);
+
+  useEffect(() => {
+    setValue("geoCodeAddress", geoCodeAddress ?? "");
+  }, [geoCodeAddress]);
+
+  const formSubmit = async (data: CustomerDataType) => {
+    try {
+      if (selectedFeature) {
+        const geo = {
+          ...selectedFeature,
+        };
+        const payload: CustomerWithGeoFeatureType = {
+          customer: data,
+          feature: geo,
+        };
+
+        await upsertCustomerAndFeatureAction(payload);
+        console.log("customer information saved");
+      } else {
+        console.log("Must select a drawing");
+      }
+    } catch (error) {
+      // TypeScript infers error as `unknown`, so you often need to narrow the type
+      if (error instanceof Error) {
+        console.error("An error occurred:", error.message);
+      } else {
+        console.error("Unknown error:", error);
+      }
     }
   };
 
@@ -353,7 +376,7 @@ const CustomerForm = ({ offCanvas = false }: CustomerFormProps) => {
 
         <div className="row">
           <div className="col-sm-12">
-            <div className="mb-3">
+            <div className="mb-1">
               <label
                 htmlFor="address"
                 className="form-label fs-12 text-primary"
@@ -371,6 +394,39 @@ const CustomerForm = ({ offCanvas = false }: CustomerFormProps) => {
               {errors.address && (
                 <div id="address-desc" className="form-text text-danger">
                   {errors.address.message}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className={clsx(offCanvas ? "col-sm-12" : "col-md-6 col-sm-12")}>
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                aria-label="Geo Code Address"
+                aria-describedby="geo-code-address"
+                readOnly
+                {...(register ? register("geoCodeAddress") : {})}
+              />
+              <button
+                className="btn btn-secondary btn-icon"
+                type="button"
+                id="geo-code-address"
+                onClick={() => {
+                  console.log("Drawing Mode:", "draw_point");
+                  setDrawingMode("draw_point");
+                }}
+              >
+                <i className="ri-map-pin-line"></i>
+              </button>
+            </div>
+            <div>
+              {errors.geoCodeAddress && (
+                <div id="geocode-address" className="form-text text-danger">
+                  {errors.geoCodeAddress.message}
                 </div>
               )}
             </div>
@@ -451,17 +507,6 @@ const CustomerForm = ({ offCanvas = false }: CustomerFormProps) => {
             </div>
           </div>
         </div>
-
-        <div className="row">
-          <div className="col-12">
-            {drawnFeature ? (
-              <pre>{JSON.stringify(drawnFeature, null, 2)}</pre>
-            ) : (
-              "No feature selected"
-            )}
-          </div>
-        </div>
-
         <div className="row">
           <div className="col-sm-6">
             <div className="d-grid gap-2 mb-3">

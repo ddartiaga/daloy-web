@@ -1,9 +1,9 @@
 "use client";
 
-import InteractiveMap from "@/components/gis/InteractiveMap";
+import InteractiveMap from "@/components/map/InteractiveMap";
 import OffCanvas from "@/components/elements/OffCanvas";
 import CustomerForm from "@/components/customer/CustomerForm";
-import { useMapStore } from "@/components/gis/store";
+import { useMapStore } from "@/components/map/store";
 
 const GIS = () => {
   const setDrawingMode = useMapStore((state) => state.setDrawingMode);
@@ -16,12 +16,6 @@ const GIS = () => {
         className="offcanvas-start"
         labelId="account-offcanvas-label"
         label="Customer"
-        onShown={() => {
-          setDrawingMode("draw_point");
-        }}
-        onHidden={() => {
-          setDrawingMode("simple_select");
-        }}
       >
         <CustomerForm offCanvas={true} />
       </OffCanvas>

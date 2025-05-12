@@ -7,7 +7,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:merge": "tsx prisma/merge-schema.ts",
+    "prisma:generate": "npm run prisma:merge && prisma generate",
+    "prisma:push": "npm run prisma:merge && prisma db push",
+    "prisma:push:force": "npm run prisma:merge && prisma db push --force-reset",
+    "prisma:migrate:dev": "npm run prisma:merge && prisma migrate dev",
+    "prisma:migrate:deploy": "npm run prisma:merge && prisma migrate deploy",
+    "prisma:migrate:reset": "npm run prisma:merge && prisma migrate reset"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -33,12 +40,14 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/bootstrap": "^5.2.10",
+    "@types/mapbox__mapbox-gl-draw": "^1.4.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "prisma": "^6.5.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
     "typescript": "^5"
   }

@@ -1,0 +1,21 @@
+model SALNEmployees {
+    Id                  String  @id @default(cuid())
+    FilingType          String
+    FamilyName          String
+    FirstName           String
+    MiddleName          String
+    Address             String
+    City                String
+    Town                String
+    Position            String
+    Agency              String
+    AgencyAddress       String
+    SpouseFamilyName    String?
+    SpouseFirstName     String?
+    SpouseMiddleName    String?
+    SpousePosition      String?
+    SpouseAgency        String?
+    SpouseAgencyAddress String?
+
+    @@map("SALNEmployees")
+}

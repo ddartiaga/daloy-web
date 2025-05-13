@@ -13,6 +13,7 @@
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.9.1",
     "@hookform/resolvers": "^5.0.1",
     "@prisma/client": "^6.5.0",
     "@turf/bbox": "^7.2.0",

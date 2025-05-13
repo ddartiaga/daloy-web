@@ -47,12 +47,12 @@ const HorizontalHeader = () => {
           <div className="header-content-right">
             <div className="header-element align-items-center">
               <div className="btn-list d-lg-none d-block">
-                <Link href="/auth/login" className="btn btn-primary">
+                <a type="button" href="/auth/signin" className="btn btn-primary">
                   Sign In
-                </Link>
-                <Link href="/auth/register" className="btn btn-primary">
-                  Register
-                </Link>
+                </a>
+                <a type="button" href="/auth/signout" className="btn btn-primary">
+                  Sign Out
+                </a>
                 {/* <button
                   className="btn btn-icon btn-success switcher-icon"
                   data-bs-toggle="offcanvas"

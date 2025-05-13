@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "DALOY",

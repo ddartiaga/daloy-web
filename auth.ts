@@ -1,8 +1,11 @@
 import NextAuth from "next-auth";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import db from "@/lib/db";
+
 import Resend from "next-auth/providers/resend";
 import Google from "next-auth/providers/google";
+import { sendVerificationRequest } from "@/components/auth/signin/lib";
+
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(db),
@@ -10,7 +13,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     Resend({
       // https://authjs.dev/getting-started/providers/resend
       apiKey: process.env.RESEND_API_KEY,
-      from: "no-reply@resend.dev",
+      from: "auth@katalysttechservices.com",
+      sendVerificationRequest: sendVerificationRequest
     }),
     Google({
       clientId: process.env.AUTH_GOOGLE_ID,

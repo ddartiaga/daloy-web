@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import MenuLink from "../MenuItemLink";
@@ -18,14 +17,14 @@ const HorizontalMenuBar = ({ menu }: { menu: HorizontalMenuType }) => {
             <div className="landing-logo-container">
               <div className="horizontal-logo">
                 <a href="index.html" className="header-logo">
-                  <Image 
+                  <Image
                     width={92}
                     height={32}
                     src="/assets/images/brand-logos/desktop-logo.png"
                     alt="logo"
                     className="desktop-logo"
                   />
-                  <Image 
+                  <Image
                     width={92}
                     height={32}
                     src="/assets/images/brand-logos/desktop-white.png"
@@ -144,7 +143,7 @@ const HorizontalMenuBar = ({ menu }: { menu: HorizontalMenuType }) => {
             </div>
 
             {/* NOTE: this is for large screen view */}
-            <div className="d-lg-flex d-none">
+            {/*<div className="d-lg-flex d-none">
               <div className="btn-list d-lg-flex d-none mt-lg-2 mt-xl-0 mt-0">
                 <Link href="/auth/login" className="btn btn-primary">
                   Sign In
@@ -152,15 +151,15 @@ const HorizontalMenuBar = ({ menu }: { menu: HorizontalMenuType }) => {
                 <Link href="/auth/register" className="btn btn-primary">
                   Register
                 </Link>
-                {/* <button
+                 <button
                   className="btn btn-wave btn-icon btn-light switcher-icon"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#switcher-canvas"
                 >
                   <i className="ri-settings-3-line" />
-                </button> */}
+                </button> 
               </div>
-            </div>
+            </div>*/}
           </nav>
         </div>
       </div>

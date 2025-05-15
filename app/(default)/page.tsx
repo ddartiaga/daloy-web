@@ -1,6 +1,10 @@
+import { auth } from "@/auth";
+import SignInForm from "@/components/auth/signin/SignInForm";
+import Modal from "@/components/elements/Modal";
 import Image from "next/image";
 
-const Landing = () => {
+const Landing = async () => {
+  const session = await auth();
   return (
     <>
       <div className="landing-banner" id="home">
@@ -24,10 +28,22 @@ const Landing = () => {
                     real time — all in one place.
                   </div>
 
-                  <a href="/daloy/dashboard" className="m-1 btn btn-primary">
-                    View Management UI
-                    <i className="ri-eye-line ms-2 align-middle" />
-                  </a>
+                  {session == null ? (
+                    <button
+                      type="button"
+                      className="btn btn-primary label-btn label-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signin"
+                    >
+                      Sign In to DALOY
+                      <i className="ri-shield-user-line align-middle label-btn-icon bg-primary" />
+                    </button>
+                  ) : (
+                    <a href="/daloy/dashboard" className="m-1 btn btn-primary">
+                      View Management UI
+                      <i className="ri-eye-line ms-2 align-middle" />
+                    </a>
+                  )}
                 </div>
               </div>
               {/* <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-4">
@@ -2471,6 +2487,10 @@ const Landing = () => {
         </div>
       </section>
       {/* End:: Section-10 */}
+
+      <Modal title="Sign In To DALOY" id="signin">
+        <SignInForm />
+      </Modal>
     </>
   );
 };

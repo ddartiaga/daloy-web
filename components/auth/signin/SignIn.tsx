@@ -1,8 +1,8 @@
-import { version } from "@/package.json";
 import SignInForm from "./SignInForm";
 import Link from "next/link";
 
 import { auth } from "@/auth";
+import Version from "@/components/Version";
 
 const SignIn = async () => {
   const session = await auth();
@@ -51,7 +51,7 @@ const SignIn = async () => {
                 <span> | </span>
                 <span className="text-muted">
                   <span className="text-dark fw-semibold ">Version: </span>{" "}
-                  {version}
+                  <Version />
                 </span>
               </div>
             </div>

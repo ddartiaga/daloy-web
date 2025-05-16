@@ -1,6 +1,6 @@
-import { version } from "@/package.json";
 import { signOut, auth } from "@/auth";
 import Link from "next/link";
+import Version from "@/components/Version";
 
 const page = async () => {
   const session = await auth();
@@ -59,7 +59,7 @@ const page = async () => {
                 {/* <span> | </span> */}
                 <span className="text-muted">
                   <span className="text-dark fw-semibold ">Version: </span>{" "}
-                  {version}
+                  <Version />
                 </span>
               </div>
             </div>

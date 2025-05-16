@@ -1,7 +1,6 @@
-import { version } from "@/package.json";
+import Version from "@/components/Version";
 
-const page = ({ searchParams }: { searchParams: { email?: string } }) => {
-  const email = searchParams.email || "";
+const page = () => {
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center authentication authentication-basic h-100">
@@ -27,15 +26,10 @@ const page = ({ searchParams }: { searchParams: { email?: string } }) => {
                   An email was sent to you. Kindly check your inbox.
                 </h1>
 
-                {email && (
-                  <p className="mb-3">
-                    We've sent a sign-in link to{" "}
-                    <strong>{decodeURIComponent(email)}</strong>
-                  </p>
-                )}
+                
 
                 <p className="text-muted mt-4">
-                  If you don't see the email, check your spam folder.
+                  {"If you don't see the email, check your spam folder."}
                 </p>
               </div>
             </div>
@@ -54,7 +48,7 @@ const page = ({ searchParams }: { searchParams: { email?: string } }) => {
                 {/* <span> | </span> */}
                 <span className="text-muted">
                   <span className="text-dark fw-semibold ">Version: </span>{" "}
-                  {version}
+                  <Version />
                 </span>
               </div>
             </div>

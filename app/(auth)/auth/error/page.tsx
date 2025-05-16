@@ -1,4 +1,4 @@
-import { version } from "@/package.json";
+import Version from "@/components/Version";
 
 const page = () => {
   return (
@@ -40,7 +40,7 @@ const page = () => {
                 {/* <span> | </span> */}
                 <span className="text-muted">
                   <span className="text-dark fw-semibold ">Version: </span>{" "}
-                  {version}
+                  <Version />
                 </span>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { version } from "@/package.json";
+import Version from "@/components/Version";
 
 const page = () => {
   return (
@@ -22,7 +22,15 @@ const page = () => {
           <div className="card custom-card">
             <div className="card-body p-5">
               <div className="text-center">
-                <h6>An email was sent to you.</h6>
+                <h1 className="display-6">
+                  An email was sent to you. Kindly check your inbox.
+                </h1>
+
+                
+
+                <p className="text-muted mt-4">
+                  {"If you don't see the email, check your spam folder."}
+                </p>
               </div>
             </div>
             <div className="card-footer">
@@ -40,7 +48,7 @@ const page = () => {
                 {/* <span> | </span> */}
                 <span className="text-muted">
                   <span className="text-dark fw-semibold ">Version: </span>{" "}
-                  {version}
+                  <Version />
                 </span>
               </div>
             </div>

@@ -26,8 +26,13 @@ const SignInForm = () => {
         <form
           action={async (formData) => {
             "use server";
-            await signIn("resend", formData, {
-              redirectTo: "/daloy/dashboard",
+
+            const email = formData.get("email") as string;
+            const encodedEmail = encodeURIComponent(email);
+
+            await signIn("resend", {
+              email,
+              redirectTo: `/auth/verify-request?email=${encodedEmail}`,
             });
           }}
         >
@@ -44,6 +49,7 @@ const SignInForm = () => {
                   className="form-control"
                   placeholder="youremail@example.com"
                   aria-describedby="signin-email"
+                  required
                 />
               </div>
             </div>

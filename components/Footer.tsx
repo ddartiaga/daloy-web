@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-import { version } from "../package.json";
+import Version from "./Version";
 
 export const revalidate = false;
 
@@ -20,7 +19,8 @@ const Footer = () => {
         </span>
         <span> | </span>
         <span className="text-muted">
-          <span className="text-dark fw-semibold ">Version: </span> {version}
+          <span className="text-dark fw-semibold ">Version: </span>{" "}
+          <Version />
         </span>
       </div>
     </footer>

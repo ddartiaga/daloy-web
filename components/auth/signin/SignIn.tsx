@@ -2,7 +2,10 @@ import { version } from "@/package.json";
 import SignInForm from "./SignInForm";
 import Link from "next/link";
 
-const SignIn = () => {
+import { auth } from "@/auth";
+
+const SignIn = async () => {
+  const session = await auth();
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center authentication authentication-basic h-100">
@@ -15,7 +18,22 @@ const SignIn = () => {
               </Link>
             </div>
             <div className="card-body p-5">
-              <SignInForm />
+              {session ? (
+                <>
+                  <div className="text-center d-grid">
+                    <h1 className="display-6">You are already signed in.</h1>
+                    <Link
+                      type="button"
+                      href="/"
+                      className="btn btn-primary btn-wave mt-3"
+                    >
+                      Go Back to Home Page
+                    </Link>
+                  </div>
+                </>
+              ) : (
+                <SignInForm />
+              )}
             </div>
             <div className="card-footer">
               <div className="text-center">

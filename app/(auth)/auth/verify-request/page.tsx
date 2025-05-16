@@ -1,6 +1,7 @@
 import { version } from "@/package.json";
 
-const page = () => {
+const page = ({ searchParams }: { searchParams: { email?: string } }) => {
+  const email = searchParams.email || "";
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center authentication authentication-basic h-100">
@@ -22,7 +23,20 @@ const page = () => {
           <div className="card custom-card">
             <div className="card-body p-5">
               <div className="text-center">
-                <h6>An email was sent to you.</h6>
+                <h1 className="display-6">
+                  An email was sent to you. Kindly check your inbox.
+                </h1>
+
+                {email && (
+                  <p className="mb-3">
+                    We've sent a sign-in link to{" "}
+                    <strong>{decodeURIComponent(email)}</strong>
+                  </p>
+                )}
+
+                <p className="text-muted mt-4">
+                  If you don't see the email, check your spam folder.
+                </p>
               </div>
             </div>
             <div className="card-footer">

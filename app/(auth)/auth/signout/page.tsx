@@ -1,30 +1,48 @@
 import { version } from "@/package.json";
-import { signOut } from "@/auth";
+import { signOut, auth } from "@/auth";
+import Link from "next/link";
 
-const page = () => {
+const page = async () => {
+  const session = await auth();
   return (
     <div className="container">
       <div className="row justify-content-center align-items-center authentication authentication-basic h-100">
         <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12">
           <div className="card custom-card">
             <div className="card-body p-5">
-              <p className="h5 fw-semibold mb-4 text-center">
-                <span className="text-primary">Sign Out</span> <br />
-              </p>
-              <div>
-                <form
-                  action={async () => {
-                    "use server";
-                    await signOut({redirectTo: "/"});
-                  }}
-                >
-                  <div className="d-grid mt-2">
-                    <button type="submit" className="btn btn-danger label-btn">
-                      Sign Out
-                    </button>
-                  </div>
-                </form>
-              </div>
+              {session ? (
+                <div className="text-center">
+                  <p className="h6 mb-5">{`Sign Out as '${session.user?.email}'`}</p>
+                  <form
+                    action={async () => {
+                      "use server";
+                      await signOut({ redirectTo: "/" });
+                    }}
+                  >
+                    <div className="d-grid mt-2">
+                      <button
+                        type="submit"
+                        className="btn btn-danger label-btn"
+                      >
+                        Sign Out
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              ) : (
+                <div className="text-center d-grid">
+                  <h1 className="display-6">
+                    You are not currently signed in.
+                  </h1>
+                  <Link
+                    type="button"
+                    href="/"
+                    className="btn btn-primary btn-wave mt-3"
+                  >
+                    Go Back to Home Page
+                  </Link>
+                </div>
+              )}
             </div>
             <div className="card-footer">
               <div className="mt-auto bg-white text-center d-flex justify-content-between">
